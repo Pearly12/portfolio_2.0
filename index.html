@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/matts-framework.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="nav">
+        <div class="nav-logo"><img src="./images/matts_portfolio.png"></img></div>
+        <button class="nav-button" onclick="openNav()">&#9776;</button>
+        <div class="nav-list"> 
+            <ul>
+                <li><a target="_blank" href="https://drive.google.com/file/d/13ZWEtrjv3RcTcPa2VAXQqWSD02DKencn/view?usp=sharing">Resume</a></li>
+                <li><a target="_blank" href="https://github.com/Pearly12?tab=repositories">Github</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="nav-list-mobile"> 
+            <img src="/images/matts_portfolio.png"></img>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a target="_blank" href="https://drive.google.com/file/d/13ZWEtrjv3RcTcPa2VAXQqWSD02DKencn/view?usp=sharing">Resume</a></li>
+                <li><a target="_blank" href="https://github.com/Pearly12?tab=repositories">Github</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="row">
+      <article class="intro columns-12">
+        <h1 style="display: none">Introduction</h1>
+        <hr/>
+        <p>Hey, my name is Matthew Furlong and I am a front-end web developer. Thanks for checking out my portfolio! Below you will find some of my current projects and websites from previous employment. </p>
+        <hr/>
+      </article>
+    </section>
+    <section class="row">
+        <article class="columns-12">
+            <h1>Projects</h1>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Grid-based Framework</h3>
+                    <img src="images/grid_framework.png">
+                    <br/><br/>
+                    <a href="https://github.com/Pearly12/my-framework">View Code</a>
+                    <br/>
+                    <p>
+                        1024px, 12-column, grid-based, responsive CSS framework. 
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Niagara-on-the-Lake Public Library(Drupal)</h3>
+                    <img src="images/notl-card.jpg">
+                    <br/><br/>
+                    <a href="https://notlpubliclibrary.org/">Live Site</a>
+                    <br/>
+                    <p>Designed and developed responsive site on Drupal. Event views filtered by age group and date. Search the library catalogue.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Lincoln Public Library(Drupal)</h3>
+                    <img src="images/lincoln-card.jpg">
+                    <br/><br/>
+                    <a href="https://www.lincoln.library.on.ca/">Live Site</a>
+                    <br/>
+                    <p>Designed and developed responsive per clients wishes. Event views filtered by age group and date. Search the library catalogue.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Space College(Wordpress)</h3>
+                    <img src="images/spaceCard.jpg">
+                    <br/><br/>
+                        <a href="https://github.com/Pearly12/Space_College">View Code</a>
+                        <br/>
+                        <a href="http://mattf1.sgedu.site/">Live Site</a>
+                    <br/>
+                    <p>
+                        Functioning live search, custom pages and post types, and user login with roles and permissions.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javaScript</li>
+                        <li>PHP</li>
+                        <li>REST</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <article id="contact">
+            <h1>Contact Information</h1>
+            <p>
+                Email: Matt.Furlong.12@gmail.com<br/>
+                Phone: (289) 990 - 9279
+            </p>
+        </article>
+    </footer>  
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+
+
+/* 
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+/* ===================
+      TYPOGRAPHY
+==================== */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3, a{
+    font-family: 'Trispace', sans-serif;
+}
+
+h1{
+    font-size: 2em;  
+    text-align: center;  
+}
+
+.intro p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-item p,
+.flex-item li{
+    font-size: 1.25em;
+}
+
+.flex-item p {
+    line-height: 1.5em;
+}
+
+footer p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.nav a {
+    color: #000;
+    /* text-transform: uppercase; */
+}
+
+.flex-item ul{
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.flex-item a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+/* ===================
+        LAYOUT
+==================== */
+
+/* NAVIGATION  */
+.nav-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nav-button{
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.nav li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+    line-height: 2.5em;
+}
+
+.nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav a:hover:after,
+.nav a:focus:after { 
+    width: 20%; 
+    left: 40%; 
+}
+
+/* MOBILE NAV  */
+
+a.closebtn{
+    vertical-align: baseline;
+}
+
+a.closebtn:after
+  {
+    display: none;
+  }
+
+
+/* SECTIONS */
+
+section{
+      margin: 25px;
+}
+
+hr{
+    width: 90%;
+}
+
+
+/* FLEX PROJECTS */
+
+.flex-container{
+    margin: 15px auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.flex-item{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 5px;
+    -webkit-box-shadow: 5px 10px;
+    box-shadow: 5px 10px;
+    margin-bottom: 25px;
+}
+
+.flex-item img{
+    border: 1px solid #000;
+    width: 80%;
+}
+
+.flex-item-links{
+    margin-top: 15px;
+}
+
+.flex-item ul{
+    padding: 10px;
+}
+
+.flex-item li{
+    margin-bottom: 10px;
+}
+
+.flex-item a {
+    padding: 15px;
+    display: inline;
+    border-radius: 5%;
+    background-color: black;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .1     s;
+         -o-transition-duration: .1     s;
+            transition-duration: .1     s;
+}
+
+.flex-item a:hover,
+.flex-item a:focus{
+    background-color: #192424;
+}
+
+
+/* FOOTER */
+
+#contact{
+ padding: 50px;
+ background-image: -o-linear-gradient(left, #000,#192424 );
+ background-image: -webkit-gradient(linear, left top, right top, from(#000),to(#192424) );
+ background-image: linear-gradient(to right, #000,#192424 );
+ color:#fff;
+ text-align: center;
+ 
+}
+
+@media only screen and (min-width: 768px)  {
+    /* ===================
+      TYPOGRAPHY
+    ==================== */
+
+    .flex-item p,
+    .flex-item li{
+        font-size: 1.125em;
+    }
+    .nav a:hover:after,
+    .nav a:focus:after { 
+        width: 100%; 
+        left: 0; 
+    }
+
+    .nav{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        width: 800px;
+    }
+
+    .nav-list{
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        margin-right: 50px;
+    }
+
+    .flex-container{
+        margin-top: 30px;
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .flex-item h3{
+        height: 75px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    .nav{
+        width: 1024px;
+    }
+
+    .flex-item {
+        width: 20%;
+    }
+}

@@ -1,0 +1,404 @@
+/* ========================
+  Matt's Framework
+==========================*/
+
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================
+  Navigation
+==========================*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  font-size: 1.5em;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-search {
+  display: none;
+}
+
+.nav-logo {
+  height: 75px;
+}
+
+.nav-logo img {
+  height: 75px;
+}
+
+/* ========================
+  Mobile Navigation
+==========================*/
+
+#nav-list-mobile {
+  position: fixed;
+  background-color: white;
+  width: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+#nav-list-mobile img {
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-top: 100px;
+}
+
+.closebtn {
+  font-size: 3em;
+  text-decoration: none;
+  margin-left: 17%;
+  padding-bottom: 30px;
+}
+
+#nav-list-mobile ul {
+  margin-top: 30px;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-list-mobile li {
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+#nav-list-mobile a {
+  text-decoration: none;
+}
+
+/* ========================
+  Grid
+==========================*/
+
+.row {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.columns-1,
+.columns-2,
+.columns-3,
+.columns-4,
+.columns-5,
+.columns-6,
+.columns-7,
+.columns-8,
+.columns-9,
+.columns-10,
+.columns-11,
+.columns-12 {
+  width: 520px;
+  margin: 0 auto;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* ========================
+    Grid
+  ==========================*/
+
+  .row {
+    max-width: 720px;
+    width: 720px;
+  }
+
+  .columns-1,
+  .columns-2,
+  .columns-3,
+  .columns-4,
+  .columns-5,
+  .columns-6,
+  .columns-7,
+  .columns-8,
+  .columns-9,
+  .columns-10,
+  .columns-11,
+  .columns-12 {
+    width: 700px;
+    margin: 0 auto;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* ========================
+    Navigation
+  ==========================*/
+
+  #nav-list-mobile {
+    display: none;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .nav-logo {
+    text-align: center;
+    width: 20%;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 60%;
+  }
+
+  .nav-search {
+    width: 20%;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    height: 100px;
+    list-style-type: none;
+  }
+
+  .nav-search input {
+    font-size: 1em;
+    height: 40px;
+  }
+
+  .nav-search {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list li {
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  /* ========================
+    Grid
+  ==========================*/
+
+  .row {
+    max-width: 1024px;
+    width: 1024px;
+    overflow: hidden;
+    clear: both;
+  }
+
+  .columns-1,
+  .columns-2,
+  .columns-3,
+  .columns-4,
+  .columns-5,
+  .columns-6,
+  .columns-7,
+  .columns-8,
+  .columns-9,
+  .columns-10,
+  .columns-11,
+  .columns-12 {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .columns-1 {
+    width: 74px;
+  }
+
+  .columns-2 {
+    width: 158px;
+  }
+
+  .columns-3 {
+    width: 236px;
+  }
+
+  .columns-4 {
+    width: 321.33333px;
+  }
+
+  .columns-5 {
+    width: 418px;
+  }
+
+  .columns-6 {
+    width: 502px;
+  }
+
+  .columns-7 {
+    width: 586px;
+  }
+
+  .columns-8 {
+    width: 682.666667px;
+  }
+
+  .columns-9 {
+    width: 768px;
+  }
+
+  .columns-10 {
+    width: 846px;
+  }
+
+  .columns-11 {
+    width: 930px;
+  }
+
+  .columns-12 {
+    width: 1014px;
+  }
+
+  .prefix-1 {
+    padding-left: 84px;
+  }
+  .prefix-2 {
+    padding-left: 168px;
+  }
+  .prefix-3 {
+    padding-left: 246px;
+  }
+  .prefix-4 {
+    padding-left: 331.33333px;
+  }
+  .prefix-5 {
+    padding-left: 428px;
+  }
+  .prefix-6 {
+    padding-left: 512px;
+  }
+  .prefix-7 {
+    padding-left: 596px;
+  }
+  .prefix-8 {
+    padding-left: 692.666667px;
+  }
+  .prefix-9 {
+    padding-left: 778px;
+  }
+  .prefix-10 {
+    padding-left: 856px;
+  }
+  .prefix-11 {
+    padding-left: 940px;
+  }
+
+  .suffix-1 {
+    padding-right: 84px;
+  }
+  .suffix-2 {
+    padding-right: 168px;
+  }
+  .suffix-3 {
+    padding-right: 246px;
+  }
+  .suffix-4 {
+    padding-right: 331.33333px;
+  }
+  .suffix-5 {
+    padding-right: 428px;
+  }
+  .suffix-6 {
+    padding-right: 512px;
+  }
+  .suffix-7 {
+    padding-right: 596px;
+  }
+  .suffix-8 {
+    padding-right: 692.666667px;
+  }
+  .suffix-9 {
+    padding-right: 778px;
+  }
+  .suffix-10 {
+    padding-right: 856px;
+  }
+  .suffix-11 {
+    padding-right: 1114px;
+  }
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
