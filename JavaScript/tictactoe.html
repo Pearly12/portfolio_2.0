@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/ticTacStyle.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="../css/matts-framework.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-logo"><a href="../index.html"><img src="../images/MattHeader.jpg"></img></a></div>
+    <button class="nav-button" onclick="openNav()">&#9776;</button>
+    <div class="nav-list"> 
+        <ul>
+            <li><a target="_blank" href="https://drive.google.com/file/d/13ZWEtrjv3RcTcPa2VAXQqWSD02DKencn/view?usp=sharing">Resume</a></li>
+            <li><a target="_blank" href="https://github.com/Pearly12?tab=repositories">Github</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="nav-list-mobile"> 
+        <img src="/images/matts_portfolio.png"></img>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a target="_blank" href="https://drive.google.com/file/d/13ZWEtrjv3RcTcPa2VAXQqWSD02DKencn/view?usp=sharing">Resume</a></li>
+            <li><a target="_blank" href="https://github.com/Pearly12?tab=repositories">Github</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+  <section>
+      <h1 id="title">Tic-Tac-Toe</h1>
+      <h3 id="instructions"></h3>
+      <div id="gameboard">
+      </div>
+      <div id="below-game">
+        <button id="btn-start" onclick="gameflow.newGame()">New Game</button>
+      </div>
+  </section>
+  <footer>
+    <article id="contact">
+        <h1>Contact Information</h1>
+        <p>
+            Email: Matt.Furlong.12@gmail.com<br/>
+            Phone: (289) 990 - 9279
+        </p>
+    </article>
+</footer>  
+  <script src="js/ticTacScript.js"></script>
+</body>
+
+</html>
